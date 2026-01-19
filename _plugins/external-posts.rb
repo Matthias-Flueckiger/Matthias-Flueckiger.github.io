@@ -9,6 +9,9 @@ module ExternalPosts
     safe true
     priority :high
 
+    # Path to CA bundle
+    CA_FILE = File.expand_path("~/cacert.pem")
+
     def generate(site)
       if site.config['external_sources'] != nil
         site.config['external_sources'].each do |src|
@@ -23,7 +26,10 @@ module ExternalPosts
     end
 
     def fetch_from_rss(site, src)
-      xml = HTTParty.get(src['rss_url']).body
+      xml = HTTParty.get(
+        src['rss_url'],
+        ssl_ca_file: CA_FILE
+      ).body
       return if xml.nil?
       begin
         feed = Feedjira.parse(xml)
@@ -49,10 +55,8 @@ module ExternalPosts
     def create_document(site, source_name, url, content, src = {})
       # check if title is composed only of whitespace or foreign characters
       if content[:title].gsub(/[^\w]/, '').strip.empty?
-        # use the source name and last url segment as fallback
         slug = "#{source_name.downcase.strip.gsub(' ', '-').gsub(/[^\w-]/, '')}-#{url.split('/').last}"
       else
-        # parse title from the post or use the source name and last url segment as fallback
         slug = content[:title].downcase.strip.gsub(' ', '-').gsub(/[^\w-]/, '')
         slug = "#{source_name.downcase.strip.gsub(' ', '-').gsub(/[^\w-]/, '')}-#{url.split('/').last}" if slug.empty?
       end
@@ -67,7 +71,7 @@ module ExternalPosts
       doc.data['description'] = content[:summary]
       doc.data['date'] = content[:published]
       doc.data['redirect'] = url
-      
+
       # Apply default categories and tags from source configuration
       if src['categories'] && src['categories'].is_a?(Array) && !src['categories'].empty?
         doc.data['categories'] = src['categories']
@@ -75,7 +79,7 @@ module ExternalPosts
       if src['tags'] && src['tags'].is_a?(Array) && !src['tags'].empty?
         doc.data['tags'] = src['tags']
       end
-      
+
       doc.content = content[:content]
       site.collections['posts'].docs << doc
     end
@@ -101,7 +105,10 @@ module ExternalPosts
     end
 
     def fetch_content_from_url(url)
-      html = HTTParty.get(url).body
+      html = HTTParty.get(
+        url,
+        ssl_ca_file: CA_FILE
+      ).body
       parsed_html = Nokogiri::HTML(html)
 
       title = parsed_html.at('head title')&.text.strip || ''
@@ -116,7 +123,6 @@ module ExternalPosts
         title: title,
         content: body_content,
         summary: description
-        # Note: The published date is now added in the fetch_from_urls method.
       }
     end
 
