@@ -21,7 +21,7 @@ nav_order: 2
 
 <p style="margin: 0.8rem 0;">Temperature and Risk of Diarrhoea among Children in Sub-Saharan Africa (with Markus Ludwig). World Development, December 2022 (160)  <a href="https://doi.org/10.1016/j.worlddev.2022.106070">[link]</a> </p>
 
-<p style="margin: 0.8rem 0;">Roman Transport Network Connectivity and Economic Integration (with Erik Hornung, Mario Larch, Markus Ludwig, and Allard Mees). Review of Economic Studies, March 2022 (89), 2  <a href="https://doi.org/10.1093/restud/rdab036">[link]</a> <a href="https://github.com/Matthias-Flueckiger/FindLevelDataFlueckigerEtAl2022">[find-level data]</a> </p>
+<p style="margin: 0.8rem 0;">Roman Transport Network Connectivity and Economic Integration (with Erik Hornung, Mario Larch, Markus Ludwig, and Allard Mees). Review of Economic Studies, March 2022 (89), 2  <a href="https://doi.org/10.1093/restud/rdab036">[link]</a>  <a href="https://github.com/Matthias-Flueckiger/FindLevelDataFlueckigerEtAl2022">[find-level data]</a> </p>
 
 <p style="margin: 0.8rem 0;">Malaria Suitability, Urbanization and Economic Development in Sub-Saharan Africa (with Markus Ludwig). Journal of Urban Economics, November 2020 (120)  <a href="https://doi.org/10.1016/j.jue.2020.103279">[link]</a>  </p>
 
