@@ -52,6 +52,6 @@ nav_order: 2
   Working Papers
 </h3>
 
-<p style="margin: 0.8rem 0;">The Dawn of Civilization: Metal Trade and the Rise of Hierarchy (with Mario Larch, Markus Ludwig, and Luigi Pascali). Conditionally accepted, American Economic Review</p>
+<p style="margin: 0.8rem 0;">The Dawn of Civilization: Metal Trade and the Rise of Hierarchy (with Mario Larch, Markus Ludwig, and Luigi Pascali). Accepted for publiaction American Economic Review</p>
 
 <p style="margin: 0.8rem 0;">Gender bias in the aftermath of fraud: Evidence from the Theranos case (with Jonas Klärchen, Hanh My Le, and Markus Ludwig, 2026)</p>

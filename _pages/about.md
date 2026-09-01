@@ -18,7 +18,7 @@ latest_posts:
   limit: 3 # leave blank to include all the blog posts
 ---
 
-I am a Senior Lecturer in Economics at the [University of York](https://www.york.ac.uk). 
+I am a Professor in Economics at the [University of York](https://www.york.ac.uk). 
 I previously worked at Queen's University Belfast following my PhD taken at the University of Basel.
 
 My research lies at the intersection of development economics, international trade, health economics, and political economy.
