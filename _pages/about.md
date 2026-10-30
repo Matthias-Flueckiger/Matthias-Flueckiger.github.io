@@ -2,7 +2,7 @@
 layout: about
 title: About
 permalink: /
-subtitle: 
+subtitle:
 
 selected_papers: false # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page
@@ -18,7 +18,7 @@ latest_posts:
   limit: 3 # leave blank to include all the blog posts
 ---
 
-I am a Professor in Economics at the [University of York](https://www.york.ac.uk). 
+I am a Professor in Economics at the [University of York](https://www.york.ac.uk).
 I previously worked at Queen's University Belfast following my PhD taken at the University of Basel.
 
 My research lies at the intersection of development economics, international trade, health economics, and political economy.

@@ -47,7 +47,6 @@ nav_order: 2
 
 <p style="margin: 0.8rem 0;">Teaching Economics with Economic History, pp. 55–59. In: An Economist’s Guide to Economic History (edited by Matthias Blum and Christopher Colvin, Palgrave Macmillan, 2018)  <a href="https://doi.org/10.1007/978-3-319-96568-0">[link]</a> </p>
 
-
 <h3 style="font-weight: 400; font-size: 1.2rem; margin-top: 2rem;">
   Working Papers
 </h3>
